@@ -1,10 +1,10 @@
 ---
 layout: default
-title: Customization
+title: Create a New Discord Account
 nav_order: 100
 ---
 
-# Creating a Developer Discord Account
+# Creating a new Discord Account
 {: .no_toc }
 
 ## Table of contents
