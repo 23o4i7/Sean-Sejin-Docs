@@ -18,6 +18,7 @@ nav_order: 100
 ## Creating a New Discord Account
 {: .d-inline-block }
 
+
 Warning: 
 {: .label .label-red .d-inline-block }
 
