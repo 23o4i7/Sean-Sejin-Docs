@@ -21,7 +21,7 @@ Any users who want to create a Discord Bot.
   * Secure internet connection
   * A developer account on Discord 
   * Working knowledge of Javascript and Node.js
-  * Basic understanding of asynchronous and synchronous Javascript functions
+  * Basic understanding of synchronous and callback functions in Javascript
 
 
 ## Software Requirements
