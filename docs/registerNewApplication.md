@@ -1,10 +1,10 @@
 ---
 layout: default
-title: Create a New Discord Account
+title: Authorize and connect the bot to a server
 nav_order: 4
 ---
 
-## Registering the new application as a bot
+## Authorize and connect the bot to a server
 1. After the application name is created, you will see the general information page. On the left side of the page, you will be able to see “Bot”.
 
 2. Go to the “Bot” tab and click “Add Bot”. You should confirm by clicking “Yes, do it!”
