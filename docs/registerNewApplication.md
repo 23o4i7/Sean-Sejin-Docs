@@ -1,10 +1,10 @@
 ---
 layout: default
-title: Authorize and connect the bot to a server
+title: Register the new application as a bot
 nav_order: 4
 ---
 
-## Authorize and connect the bot to a server
+## Register the new application as a bot
 1. After the application name is created, you will see the general information page. On the left side of the page, you will be able to see “Bot”.
 
 2. Go to the “Bot” tab and click “Add Bot”. You should confirm by clicking “Yes, do it!”
