@@ -7,7 +7,7 @@ nav_order: 4
 ## Authorize and connect the bot to a server
 In this task, inviting your bot to a server is the main part. Create an invite URL for your bot to join a server.
 
-1. Go to the_**OAuth2**_ tab, and click the _**URL Generator**_.<br><br>![newApplication1](../graphics/authorization1.png)
+1. Go to the _**OAuth2**_ tab, and click the _**URL Generator**_.<br><br>![newApplication1](../graphics/authorization1.png)
 
 2. Once you see the screen below, click the _**Bot**_ under the _**Scopes**_ section.<br><br>![newApplication1](../graphics/authorization2.png)
 
