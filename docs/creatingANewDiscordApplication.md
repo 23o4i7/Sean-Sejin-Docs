@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Create a New Discord Account
+title: Create a New Discord Application
 nav_order: 3
 ---
 
