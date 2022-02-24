@@ -18,7 +18,7 @@ nav_order: 2
 ## Creating a New Discord Account
 {: .d-inline-block }
 
-| ![warning](../graphics/warning2.png)<br> It is recommended for users to create a separate account to create and manage their bots. For bots to function, they require your unencrypted, secure API key, which can be used to compromise your account. Use your personal account at your own risk. |
+| ![warning](../graphics/warning2.png)<br> It is recommended for users to create a separate account to create and manage their bots. For bots to function, they require a user's secure API key, which can be used to compromise your account. Use your personal account at your own risk. |
 |---|
 | For users who wish to manage bots on an existing account, please skip this and jump ahead to the next section, [Enabling Developer Mode on Your Discord Account.](https://23o4i7.github.io/Sean-Sejin-Docs/docs/createDiscordAccount/#enabling-developer-mode) |
 
