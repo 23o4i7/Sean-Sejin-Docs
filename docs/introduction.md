@@ -35,4 +35,6 @@ Any users who want to create a Discord Bot.
 | Convention   | Appearance  | Examples |
 |:-------------|:------------|:---------|
 | Important Items and Emphasis | ***Bold Italics*** | ***user, console*** |
-| Code Input | `code` | ```console.log("Hello World)```    |     
+| Code Input | `code` | ```console.log("Hello World)``` |
+| Console Outputs | _`code italics`_ | _`console.log("Hello World")`_ |
+| Warning | Warning{: .label .label-red .d-inline-block } | Read Before Continuing{: .label .label-red .d-inline-block } |
