@@ -35,13 +35,13 @@ After creating an account, you will be prompted to create your first Discord ser
 
 You should now see a screen similar to the one shown in the image below.
 
-1. Select ***Create My Own***.<br><br>![createServer01](../graphics/createFirstServer.png)<br>
+1. Click ***Create My Own***.<br><br>![createServer01](../graphics/createFirstServer.png)<br>
 
-2. Select ***For me and my friends***.<br><br>![createServer02](../graphics/createFirstServer2.png)<br>
+2. Click ***For me and my friends***.<br><br>![createServer02](../graphics/createFirstServer2.png)<br>
 
-3. Give your server a name. Server names are not unique and can contain any combination of letters and numbers. After naming the server, select the ***Create*** button.<br><br>![createServer03](../graphics/createFirstServer3.png)<br>
+3. Give your server a name. Server names are not unique and can contain any combination of letters and numbers. After naming the server, click the ***Create*** button.<br><br>![createServer03](../graphics/createFirstServer3.png)<br>
 
-4. When it prompts you to ***Start a Conversation***, you can put a topic of your choice, or select ***Skip***.<br><br>![createServer04](../graphics/createFirstServer4.png)<br>
+4. When it prompts you to ***Start a Conversation***, you can put a topic of your choice, or click ***Skip***.<br><br>![createServer04](../graphics/createFirstServer4.png)<br>
  
 5. Click ***Take me to my server!***, and it will bring you to your server's main page.
 
