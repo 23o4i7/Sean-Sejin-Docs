@@ -26,6 +26,9 @@ First, go to Discord's [account creation page](https://discord.com/register) on 
 
 For a more detailed guide, Discord has a [Starter Guide](https://support.discord.com/hc/en-us/articles/360033931551-Getting-Started) and [Beginner's Guide](https://support.discord.com/hc/en-us/articles/360045138571-Beginner-s-Guide-to-Discord), for a step-by-step guide and to familiarize yourself with Discord's interface.
 
+## Creating a Discord Server
+{: .d-inline-block }
+
 After creating an account, you will be prompted to create your first Discord server. You should see a screen that looks like this, or similar to the image below. 
 
 Select ***Create My Own***. 
