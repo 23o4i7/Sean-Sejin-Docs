@@ -20,11 +20,11 @@ nav_order: 2
 
 | ![warning](../graphics/warning2.png)<br> It is recommended for users to create a separate account to create and manage their bots. For bots to function, they require a user's secure API key, which can be used to compromise your account. Use your personal account at your own risk. |
 |---|
-| For users who wish to manage bots on an existing account, please skip this and jump ahead to the next section, [Enabling Developer Mode on Your Discord Account.](https://23o4i7.github.io/Sean-Sejin-Docs/docs/createDiscordAccount/#enabling-developer-mode) |
+| For users who wish to manage bots on an existing account, you may skip this step and jump ahead to the next section, [Enabling Developer Mode on Your Discord Account.](https://23o4i7.github.io/Sean-Sejin-Docs/docs/createDiscordAccount/#enabling-developer-mode) |
 
 First, go to Discord's [account creation page](https://discord.com/register) on any device and fill out the ***Create An Account*** form to create a new Discord account.
 
-For a more detailed guide, Discord has a [Starter Guide](https://support.discord.com/hc/en-us/articles/360033931551-Getting-Started) and [Beginner's Guide](https://support.discord.com/hc/en-us/articles/360045138571-Beginner-s-Guide-to-Discord), for a step-by-step guide and to familiarize yourself with Discord's interface.
+For a detailed guide to creating an account, Discord has a [Starter Guide](https://support.discord.com/hc/en-us/articles/360033931551-Getting-Started) and [Beginner's Guide](https://support.discord.com/hc/en-us/articles/360045138571-Beginner-s-Guide-to-Discord) for step-by-step instructions and an explanation about Discord's interface and features.
 
 ---
 
