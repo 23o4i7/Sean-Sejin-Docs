@@ -26,6 +26,8 @@ First, go to Discord's [account creation page](https://discord.com/register) on 
 
 For a more detailed guide, Discord has a [Starter Guide](https://support.discord.com/hc/en-us/articles/360033931551-Getting-Started) and [Beginner's Guide](https://support.discord.com/hc/en-us/articles/360045138571-Beginner-s-Guide-to-Discord), for a step-by-step guide and to familiarize yourself with Discord's interface.
 
+---
+
 ## Creating a Discord Server
 {: .d-inline-block }
 
@@ -48,6 +50,8 @@ After creating an account, you will be prompted to create your first Discord ser
 ![createServer04](../graphics/createFirstServer4.png)
  
 5. Click ***Take me to my server!***, and it will bring you to your server's main page.
+
+---
 
 ## Enabling Developer Mode
 {: .d-inline-block }
