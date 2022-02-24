@@ -62,7 +62,7 @@ Now that we are logged in, we will enable Discord's "Developer Mode" in the sett
 
 ![serverMainPage](./../graphics/serverMainPage.png)
 
-2. On the left side menu, scroll down until you see the ***Advanced*** setting. When you select it, you should see all the Advanced settings, and one of them will be ***Developer Mode***. 
+2. On the left side menu, scroll down until you see the ***Advanced*** tab. Selecing it should show the Advanced setting ***Developer Mode***. 
 
 ![developerMode](./../graphics/developerMode.png)
 
