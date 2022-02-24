@@ -1,10 +1,10 @@
 ---
 layout: default
-title: Give Authorization and Connect the Bot to a Server
+title: Authorize and connect the bot to a server
 nav_order: 5
 ---
 
-## Giving authorization and connecting the bot to a server
+## Authorize and connect the bot to a server
 In this task, inviting your bot to a server is the main part. Create an invite URL for your bot to join a server.
 
 1. Go to the “OAuth2” tab, and click the “URL Generator”.
