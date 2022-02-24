@@ -17,7 +17,6 @@ nav_order: 100
 
 ## Creating a New Discord Account
 {: .d-inline-block }
-<br>
 
 ![warning](../graphics/warning2.png)
 
