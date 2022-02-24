@@ -18,9 +18,10 @@ Any users who want to create a Discord Bot.
   To follow each step of the process, you need the following:
 
   * Access to a computer
-  * Discord app
+  * Secure internet connection
   * A developer account on Discord 
-  * Basic understanding of programming
+  * Working knowledge of Javascript and Node.js
+  * Basic understanding of asynchronous and synchronous Javascript functions
 
 
 ## Software Requirements
