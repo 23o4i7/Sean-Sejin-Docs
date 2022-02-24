@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Create a New Discord Account
-nav_order: 3
+nav_order: 4
 ---
 
 ## Registering the new application as a bot
