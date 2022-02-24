@@ -39,4 +39,4 @@ Any users who want to create a Discord Bot.
 | Links | [Link]() | [This is a Link](https://github.com/) |
 | Code Input | `code` | ```console.log("Hello World)``` |
 | Console Outputs | _`code italics`_ | _`console.log("Hello World")`_ |
-| Warning | ![waring](../graphics/warning.png) | ![warning](../graphics/warning2.png) |
+| Warning | ![warning](../graphics/warning.png) | ![warning](../graphics/warning2.png) |
