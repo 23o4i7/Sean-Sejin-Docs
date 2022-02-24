@@ -3,6 +3,7 @@ layout: default
 title: Create a New Discord Account
 nav_order: 3
 ---
+
 ## Creating a new Discord application
 Once you enable developer mode with your account, navigate to the [Application page.](https://discord.com/developers/applications)
 
