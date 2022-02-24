@@ -28,13 +28,14 @@ Any users who want to create a Discord Bot.
 
   * Node.js V16.6.0+
   * Visual Studio Code
-  * Discord
+  * Google Chrome, Firefox 38+, Opera, Microsoft Edge 17+, Chromium 79+, or Safari 11+
 
 ## Typographical Conventions
 
 | Convention   | Appearance  | Examples |
 |:-------------|:------------|:---------|
 | Important Items and Emphasis | ***Bold Italics*** | ***user, console*** |
+| Links | [Link]() | [This is a Link](https://github.com/) |
 | Code Input | `code` | ```console.log("Hello World)``` |
 | Console Outputs | _`code italics`_ | _`console.log("Hello World")`_ |
-| Warning | Warning{: .label .label-red .d-inline-block } | Read Before Continuing{: .label .label-red .d-inline-block } |
+| Warning | ![waring](../graphics/warning.png) | ![warning](../graphics/warning2.png) |
