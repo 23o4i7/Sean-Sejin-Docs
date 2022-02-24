@@ -29,3 +29,10 @@ Any users who want to create a Discord Bot.
   * Node.js V16.6.0+
   * Visual Studio Code
   * Discord
+
+## Typographical Conventions
+
+| Convention   | Appearance  | Examples |
+|:-------------|:------------|:---------|
+| Important Items and Emphasis | ***Bold Italics*** | ***user, console*** |
+| Code Input | `code` | ```console.log("Hello World)```    |     

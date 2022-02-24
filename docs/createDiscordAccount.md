@@ -15,18 +15,53 @@ nav_order: 100
 
 ---
 
-## Creating a New Discord Account
+## Creating a New Discord Account<br/>
 {: .d-inline-block }
-<br/>
-Warning
-{: .label .label-red .d-inline-block }
-It is recommended that users to create a separate account to create and manage their bots. For bots to function, they require a user's secure API key that is not encrypted, meaning it can be used to compromise your account. Use your personal account at your own risk.
 
-For users who wish to manage both on an existing account, please skip this and jump ahead to the next section, [Enabling Developer Mode on Your Discord Account.](https://23o4i7.github.io/Sean-Sejin-Docs/docs/createDiscordAccount/#enabling-developer-mode)
+### Warning: Read Before Continuing
+{: .label .label-red .d-inline-block }
+
+It is recommended for users to create a separate account to create and manage their bots. For bots to function, they require your unencrypted, secure API key, which can be used to compromise your account. Use your personal account at your own risk. For users who wish to manage bots on an existing account, please skip this and jump ahead to the next section, [Enabling Developer Mode on Your Discord Account.](https://23o4i7.github.io/Sean-Sejin-Docs/docs/createDiscordAccount/#enabling-developer-mode)
+
+First, go to Discord's [account creation page](https://discord.com/register) on any device and fill out the ***Create An Account*** form to create a new Discord account.
+
+For a more detailed guide, Discord has a [Starter Guide](https://support.discord.com/hc/en-us/articles/360033931551-Getting-Started) and [Beginner's Guide](https://support.discord.com/hc/en-us/articles/360045138571-Beginner-s-Guide-to-Discord), for a step-by-step guide and to familiarize yourself with Discord's interface.
+
+After creating an account, you will be prompted to create your first Discord server. You should see a screen that looks like this, or similar to the image below. 
+
+Select ***Create My Own***. 
+
+![createServer01](./../graphics/createFirstServer.png) 
+
+Select ***For me and my friends***.
+
+![createServer02](../graphics/createFirstServer2.png)
+
+ Then it will ask you to give your server a name. Server names are not unique and can contain any combination of letters and numbers. After naming the server, select the ***Create*** button.
+ 
+![createServer03](./../graphics/createFirstServer3.png)
+
+ Next, when it prompts you with ***Start a Conversation***, you can write out a topic of your choice, or select ***Skip***.
+ 
+ ![createServer04](../graphics/createFirstServer4.png)
+ 
+ Then click ***Take me to my server!***, and it will bring you to your server's main page.
 
 ## Enabling Developer Mode
 {: .d-inline-block }
 
-After logging in, we will enable Discord's "Developer Mode" in the settings tab. 
+Now that we are logged in, we will enable Discord's "Developer Mode" in the settings tab.
 
-In the desktop client and on a desktop browser, it is accessed via the cog wheel on the bottom left side of the screen, beside the mute and deafen functions. On the mobile app, it is accessed using the hamburger menu on the top right of the screen, then clicking your user's profile picture on the bottom right corner.
+First, open the settings tab via the cog wheel on the bottom left of the screen, besides your user profile.
+
+![serverMainPage](./../graphics/serverMainPage.png)
+
+Then, on the left side menu, scroll down until you see the ***Advanced*** setting. When you select it, you should see all the Advanced settings, and one of them will be ***Developer Mode***. 
+
+![developerMode](./../graphics/developerMode.png)
+
+Click the ***x*** to enable Developer Mode. A second option will appear, ***Application Test Mode***. You can ignore this setting, it is reserved for Discord applications that require payment processes. 
+
+![devEnabled](./../graphics/devModeEnabled.png)
+
+Congratulations! Now that you have a Discord account set up and Developer Mode enabled, you can start making bots and applications on Discord!
