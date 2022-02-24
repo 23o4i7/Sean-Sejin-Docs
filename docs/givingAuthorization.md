@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Create a New Discord Account
+title: Give Authorization and Connect the Bot to a Server
 nav_order: 5
 ---
 
