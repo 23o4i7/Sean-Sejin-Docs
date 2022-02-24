@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Create a New Discord Account
-nav_order: 100
+nav_order: 2
 ---
 
 # Creating a new Discord Account
@@ -31,38 +31,38 @@ For a more detailed guide, Discord has a [Starter Guide](https://support.discord
 
 After creating an account, you will be prompted to create your first Discord server. You should see a screen that looks like this, or similar to the image below. 
 
-Select ***Create My Own***. 
+1. Select ***Create My Own***. 
 
-![createServer01](./../graphics/createFirstServer.png) 
+![createServer01](../graphics/createFirstServer.png) 
 
-Select ***For me and my friends***.
+2. Select ***For me and my friends***.
 
 ![createServer02](../graphics/createFirstServer2.png)
 
- Then it will ask you to give your server a name. Server names are not unique and can contain any combination of letters and numbers. After naming the server, select the ***Create*** button.
+3. Give your server a name. Server names are not unique and can contain any combination of letters and numbers. After naming the server, select the ***Create*** button.
  
-![createServer03](./../graphics/createFirstServer3.png)
+![createServer03](../graphics/createFirstServer3.png)
 
- Next, when it prompts you with ***Start a Conversation***, you can write out a topic of your choice, or select ***Skip***.
+4. When it prompts you to ***Start a Conversation***, you can write out a topic of your choice, or select ***Skip***.
  
- ![createServer04](../graphics/createFirstServer4.png)
+![createServer04](../graphics/createFirstServer4.png)
  
- Then click ***Take me to my server!***, and it will bring you to your server's main page.
+5. Click ***Take me to my server!***, and it will bring you to your server's main page.
 
 ## Enabling Developer Mode
 {: .d-inline-block }
 
 Now that we are logged in, we will enable Discord's "Developer Mode" in the settings tab.
 
-First, open the settings tab via the cog wheel on the bottom left of the screen, besides your user profile.
+1. Open the settings tab via the cog wheel on the bottom left of the screen, besides your user profile.
 
 ![serverMainPage](./../graphics/serverMainPage.png)
 
-Then, on the left side menu, scroll down until you see the ***Advanced*** setting. When you select it, you should see all the Advanced settings, and one of them will be ***Developer Mode***. 
+2. On the left side menu, scroll down until you see the ***Advanced*** setting. When you select it, you should see all the Advanced settings, and one of them will be ***Developer Mode***. 
 
 ![developerMode](./../graphics/developerMode.png)
 
-Click the ***x*** to enable Developer Mode. A second option will appear, ***Application Test Mode***. You can ignore this setting, it is reserved for Discord applications that require payment processes. 
+3. Click the ***x*** to enable Developer Mode. A second option will appear, ***Application Test Mode***. You can ignore this setting, it is reserved for Discord applications that require payment processes. 
 
 ![devEnabled](./../graphics/devModeEnabled.png)
 
