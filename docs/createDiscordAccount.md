@@ -50,16 +50,10 @@ After creating an account, you will be prompted to create your first Discord ser
 
 Now that we are logged in, we will enable Discord's "Developer Mode" in the settings tab.
 
-1. Open the settings tab via the cog wheel on the bottom left of the screen, besides your user profile.
+1. Open the settings tab via the cog wheel on the bottom left of the screen, besides your user profile.<br><br>![serverMainPage](./../graphics/serverMainPage.png)<br>
 
-![serverMainPage](./../graphics/serverMainPage.png)
+2. On the left side menu, scroll down until you see the ***Advanced*** tab. Selecing it should show the Advanced setting ***Developer Mode***.<br><br>![developerMode](./../graphics/developerMode.png)<br>
 
-2. On the left side menu, scroll down until you see the ***Advanced*** tab. Selecing it should show the Advanced setting ***Developer Mode***. 
-
-![developerMode](./../graphics/developerMode.png)
-
-3. Click the ***x*** to enable Developer Mode. A second option will appear, ***Application Test Mode***. You can ignore this setting, it is reserved for Discord applications that require payment processes. 
-
-![devEnabled](./../graphics/devModeEnabled.png)
+3. Click the ***x*** to enable Developer Mode. A second option will appear, ***Application Test Mode***. You can ignore this setting, it is reserved for Discord applications that require payment processes. <br><br>![devEnabled](./../graphics/devModeEnabled.png)<br>
 
 Congratulations! Now that you have a Discord account set up and Developer Mode enabled, you can start making bots and applications on Discord!
