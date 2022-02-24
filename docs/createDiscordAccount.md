@@ -4,10 +4,10 @@ title: Create a New Discord Account
 nav_order: 2
 ---
 
-# Creating a new Discord Account
+# Creating a New Discord Account
 {: .no_toc }
 
-## Table of contents
+## Table of Contents
 {: .no_toc .text-delta }
 
 1. TOC
