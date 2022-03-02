@@ -1,7 +1,17 @@
 ---
 layout: default
-title: Creating a New Bot on Discord
+title: Register a New Bot on Discord
 nav_order: 3
+---
+
+# Register a New Bot on Discord
+
+## Table of Contents
+{: .no_toc .text-delta }
+
+1. TOC
+{:toc}
+
 ---
 
 ## Creating a new Discord application
@@ -23,5 +33,8 @@ nav_order: 3
 
 
 
-Note
-{: .label .label-orange }
+NOTE
+{: .label .label-yellow }
+
+IMPORTANT
+{: .label .label-yellow }

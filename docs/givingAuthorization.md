@@ -4,6 +4,16 @@ title: Authorize and connect the bot to a server
 nav_order: 4
 ---
 
+# Connecting the Bot To Your Server
+
+## Table of Contents
+{: .no_toc .text-delta }
+
+1. TOC
+{:toc}
+
+---
+
 ## Authorize and connect the bot to a server
 In this task, inviting your bot to a server is the main part. Create an invite URL for your bot to join a server.
 

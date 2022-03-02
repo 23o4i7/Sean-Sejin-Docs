@@ -28,7 +28,8 @@ To follow each step of the process, you need the following:
 Before proceeding, ensure you have the following installed:
 
   * Node.js V16.6.0+
-  * Visual Studio Code
+  * An Integrated Development Environment (IDE)
+    * Visual Studio Code (Recommended), WebStorm, Atom, Eclipse, Notepad++ (Not recommended)
   * Any up-to-date browser
     * Google Chrome, Firefox 38+, Opera, Microsoft Edge 17+, Chromium 79+, or Safari 11+
 
@@ -37,8 +38,9 @@ Before proceeding, ensure you have the following installed:
 | Convention   | Appearance  | Examples |
 |:-------------|:------------|:---------|
 | Important Items and Emphasis | ***Bold Italics*** | ***user, console, instructions*** |
+| Key Press | **Bold** | **Ctrl+Shift+C, Alt+A, Enter** |
 | Links | [Link]() | [This is a Link](https://23o4i7.github.io/Sean-Sejin-Docs/) |
 | Code Input | `code` | ```console.log("Hello World)``` |
-| Console Outputs | _`code italics`_ | _`console.log("Hello World")`_ |
+| Console Output | _`code italics`_ | _`console.log("Hello World")`_ |
 | Warning | ![warning](./graphics/warning.png) | ![warning](./graphics/warning2.png) |
 | Important Note | ![note](./graphics/important.png) | ![note](./graphics/important2.png) |
