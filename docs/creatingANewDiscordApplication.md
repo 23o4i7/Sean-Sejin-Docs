@@ -5,6 +5,7 @@ nav_order: 3
 ---
 
 # Register a New Bot on Discord
+{: .no_toc }
 
 ## Table of Contents
 {: .no_toc .text-delta }
@@ -21,7 +22,10 @@ nav_order: 3
 
 3. Click the button, then you will see a pop up asking you to create the application name. Give the application a name and click _**Create**_.<br><br>![newApplication3](../graphics/newApplication3.png)
 
+---
+
 ## Register the new application as a bot
+
 1. After the application name is created, you will see the general information page. On the left side of the page, you will be able to see **Bot**.<br><br>![newApplication1](../graphics/registration1.png)
 
 2. Go to the _**Bot**_ tab and click _**Add Bot**_. You should confirm by clicking _**Yes, do it!**_<br><br>![newApplication1](../graphics/registration2.png)

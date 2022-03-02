@@ -5,6 +5,7 @@ nav_order: 5
 ---
 
 # Initializing and Setting Up the Bot
+{: .no_toc }
 
 ## Table of Contents
 {: .no_toc .text-delta }
@@ -55,7 +56,7 @@ Next, open the `token.json` folder. You will need to get your special token you 
 
 This will keep your token more secure, as it is not directly accessible to anyone who can see your bot.
 
-| ![warning](../graphics/warning2.png) |
+| ![warning](../graphics/important2.png) |
 |---|
 |<table>
 
@@ -67,8 +68,7 @@ token.json
 ``` 
 This will stop sensitive information from being published onto your Git repository.
 
-</td>
-<table>
+</table> |
 
 ---
 
