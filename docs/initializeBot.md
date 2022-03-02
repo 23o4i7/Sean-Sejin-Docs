@@ -58,17 +58,16 @@ This will keep your token more secure, as it is not directly accessible to anyon
 
 | ![warning](../graphics/important2.png) |
 |---|
-|<table>
-
-
-If you plan on uploading this project to Git, create a `.gitignore` file with the following content:
-``` 
-node_modules
-token.json
-``` 
-This will stop sensitive information from being published onto your Git repository.
-
-</table> |
+|<table> |
+|  |
+|If you plan on uploading this project to Git, create a `.gitignore` file with the following content:|
+|``` |
+|node_modules|
+|token.json|
+|``` |
+|This will stop sensitive information from being published onto your Git repository.|
+|  |
+| </table> |
 
 ---
 
@@ -84,4 +83,43 @@ Open the `app.js` file, and at the top, write:
 // Require the neccessary libraries
 const discord = require("discord.js");
 const { token } = require('./token.json');
-const 
+
+
+// Create client instance for your bot to log in
+const client = new discord.Client({ intents: [discord.Intents.FLAGS.GUILDS] });
+
+// When you bot has logged in, it will print out in the console "Ready!"
+client.once('ready', () => {
+    console.log('Ready!');
+});
+
+// Your bot will use this token to log in
+client.login(token);
+```
+
+This code will log your bot into Discord and allow it to start running. Next, let's add some basic functionality for the bot to perform.
+
+## Adding Basic Commands and Functions
+
+Because this guide is only for a very simple and small-scale bot, we are able to put all the commands inside the `app.js` file. But as bots grow over time, the feasability of this will greatly decrease. As we add more and more functionality, we will fall victim to a trap known as "if-else hell".
+
+To avoid this, we will use modular architecture to store different commands in different files. Our directory will look something like this:
+
+```
+
+discord_bot/
+  |-- node_modules/
+  |-- token.json
+  |-- app.js
+  |-- package.json
+  |-- package-lock.json
+  |-- runCommands.js
+  |-- commands/
+        |-- command1.js
+        |-- command2.js
+
+```
+
+Now that we have an idea of what a bot should look like, let's start by making the `runCommands.js` file.
+
+### runCommands.js
