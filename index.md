@@ -29,7 +29,7 @@ Before proceeding, ensure you have the following installed:
 
   * Node.js V16.6.0+
   * Visual Studio Code
-  * An up-to-date browser
+  * Any up-to-date browser
     * Google Chrome, Firefox 38+, Opera, Microsoft Edge 17+, Chromium 79+, or Safari 11+
 
 ## Typographical Conventions
@@ -41,3 +41,4 @@ Before proceeding, ensure you have the following installed:
 | Code Input | `code` | ```console.log("Hello World)``` |
 | Console Outputs | _`code italics`_ | _`console.log("Hello World")`_ |
 | Warning | ![warning](./graphics/warning.png) | ![warning](./graphics/warning2.png) |
+| Important Note | ![note](./graphics/important.png) | ![note](./graphics/important2.png) |

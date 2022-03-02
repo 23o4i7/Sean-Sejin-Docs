@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Create a New Discord Application & Register the New Application as a Bot
+title: Creating a New Bot on Discord
 nav_order: 3
 ---
 
@@ -20,3 +20,8 @@ nav_order: 3
 
 4. Congratulations! Your bot has been created. Now, click the _**Copy**_ to copy the token. 
 (This token is your bot’s password, so be extra careful not to share it with anyone. It will give others authorization to log in to your bot. If the token gets shared, click the _**Regenerate**_ to create a new token for your bot.)<br><br>![newApplication1](../graphics/registration4.png)
+
+
+
+Note
+{: .label .label-orange }
