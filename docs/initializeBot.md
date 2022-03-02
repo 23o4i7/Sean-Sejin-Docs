@@ -58,16 +58,7 @@ This will keep your token more secure, as it is not directly accessible to anyon
 
 | ![warning](../graphics/important2.png) |
 |---|
-|<table> |
-|  |
-|If you plan on uploading this project to Git, create a `.gitignore` file with the following content:|
-|``` |
-|node_modules|
-|token.json|
-|``` |
-|This will stop sensitive information from being published onto your Git repository.|
-|  |
-| </table> |
+|If you plan on uploading this project to Git, create a `.gitignore` file with `node_modules` and `token.json` inside. This will stop sensitive information from being published onto your Git repository. |
 
 ---
 
@@ -75,7 +66,7 @@ This will keep your token more secure, as it is not directly accessible to anyon
 
 By itself, JavaScript does not have the capability to create a bot that is integrated with Discord. This requires the use of libraries and modules that we will have to install on top  of our project.
 
-First, go back to the terminal, and type in `npm install nodemon discord.js`. This will install two libraries, `nodemon`, which we will use to run the bot, and `discord.js`. Discord.js is a library built off of Discord's Application Programming Interface, or API. It allows you to get and send data directly via Discord. This is an incredibly powerful feature, and makes your job os creating a bot much easier. 
+First, go back to the terminal, and type in `npm install nodemon discord.js discord-api-types`. This will install three libraries, `nodemon`, which we will use to run the bot, and `discord.js`. Discord.js is a library built off of Discord's Application Programming Interface, or API. It allows you to get and send data directly via Discord. This is an incredibly powerful feature, and makes your job os creating a bot much easier. 
 
 Open the `app.js` file, and at the top, write:
 
@@ -103,7 +94,7 @@ This code will log your bot into Discord and allow it to start running. Next, le
 
 Because this guide is only for a very simple and small-scale bot, we are able to put all the commands inside the `app.js` file. But as bots grow over time, the feasability of this will greatly decrease. As we add more and more functionality, we will fall victim to a trap known as "if-else hell".
 
-To avoid this, we will use modular architecture to store different commands in different files. Our directory will look something like this:
+To avoid this, we will use modular architecture to store different commands in different files. Our directory should end up looking something similar to this:
 
 ```
 
@@ -122,4 +113,27 @@ discord_bot/
 
 Now that we have an idea of what a bot should look like, let's start by making the `runCommands.js` file.
 
+---
+
 ### runCommands.js
+
+The first thing we will have to do is create a JavaScript file named `runCommands.js`. Then we will add in the initial code. At the top of the file, add:
+
+```js
+const { SlashCommandBuilder } = require('@discordjs/builders');
+const { REST } = require('@discordjs/rest');
+const { Routes } = require('discord-api-types/v10');
+const { clientId, guildId, token } = require('./config.json');
+
+const rest = new REST({ version: '9' }).setToken(token);
+
+rest.put(Routes.applicationGuildCommands(clientId, guildId), { body: commands })
+	.then(() => console.log('Successfully registered application commands.'))
+	.catch(console.error);
+```
+
+This will import in all the required libraries to create your own commands for your Discord bot.
+
+---
+
+### Commands

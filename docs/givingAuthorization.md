@@ -5,13 +5,6 @@ nav_order: 4
 ---
 
 # Connecting the Bot To Your Server
-{: .no_toc }
-
-## Table of Contents
-{: .no_toc .text-delta }
-
-1. TOC
-{:toc}
 
 ---
 
