@@ -29,7 +29,8 @@ Before proceeding, ensure you have the following installed:
 
   * Node.js V16.6.0+
   * Visual Studio Code
-  * Google Chrome, Firefox 38+, Opera, Microsoft Edge 17+, Chromium 79+, or Safari 11+
+  * An up-to-date browser
+    * Google Chrome, Firefox 38+, Opera, Microsoft Edge 17+, Chromium 79+, or Safari 11+
 
 ## Typographical Conventions
 
