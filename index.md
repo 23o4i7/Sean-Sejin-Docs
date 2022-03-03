@@ -27,7 +27,7 @@ To follow each step of the process, you need the following:
 ## Software Requirements
 Before proceeding, ensure you have the following installed:
 
-  * Node.js V16.6.0+
+  * Node.js V16.9.0+
   * An Integrated Development Environment (IDE)
     * Visual Studio Code (Recommended), WebStorm, Atom, Eclipse, Notepad++ (Not recommended)
   * Any up-to-date browser

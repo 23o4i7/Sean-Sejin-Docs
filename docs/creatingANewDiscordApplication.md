@@ -38,4 +38,4 @@ This part will help you how to register the new application to create a bot.
 4. Congratulations! Your bot has been created. Now, click the _**Copy**_ to copy the token. 
 <br><br>![newApplication1](../graphics/registration4.png)
 
-> This token is your bot’s password, so _**be extra careful**_ not to share it with anyone. It will give others authorization to log in to your bot. If the token gets shared, click the _**Regenerate**_ to create a new token for your bot.
+This token is your bot’s password, so _**be extra careful**_ not to share it with anyone. It will give others authorization to log in to your bot. If the token gets shared, click the _**Regenerate**_ to create a new token for your bot.

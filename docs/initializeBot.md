@@ -18,7 +18,7 @@ nav_order: 5
 
 | ![warning](../graphics/warning2.png) |
 |---|
-| Before continuing, ensure that you have an IDE like Visual Studio Code, and Node.js installed on your machine. Next, check your Node.js version by opening any terminal, such as Command Prompt on Windows, or Terminal on a Mac or Linux machine. Inside the terminal, type `node -v`, and that will show you the Node.js version installed on your machine. Make sure that the version is greater than _`V16.6.0`_. |
+| Before continuing, ensure that you have an IDE like Visual Studio Code, and Node.js installed on your machine. Next, check your Node.js version by opening any terminal, such as Command Prompt on Windows, or Terminal on a Mac or Linux machine. Inside the terminal, type `node -v`, and that will show you the Node.js version installed on your machine. Make sure that the version is greater than _`V16.9.0`_. |
 
 Now that we've added the bot to our server, we can start building the brains and some basic functions for it.
 
@@ -56,7 +56,7 @@ Next, open the `token.json` folder. You will need to get your special token you 
 
 This will keep your token more secure, as it is not directly accessible to anyone who can see your bot.
 
-| ![warning](../graphics/important2.png) |
+| ![important](../graphics/important2.png) |
 |---|
 |If you plan on uploading this project to Git, create a `.gitignore` file with `node_modules` and `token.json` inside. This will stop sensitive information from being published onto your Git repository. |
 
@@ -66,12 +66,13 @@ This will keep your token more secure, as it is not directly accessible to anyon
 
 By itself, JavaScript does not have the capability to create a bot that is integrated with Discord. This requires the use of libraries and modules that we will have to install on top  of our project.
 
-First, go back to the terminal, and type in `npm install nodemon discord.js discord-api-types`. This will install three libraries, `nodemon`, which we will use to run the bot, and `discord.js`. Discord.js is a library built off of Discord's Application Programming Interface, or API. It allows you to get and send data directly via Discord. This is an incredibly powerful feature, and makes your job os creating a bot much easier. 
+First, go back to the terminal, and type in `npm install nodemon discord.js discord-api-types`. This will install three libraries, `nodemon`, which we will use to run the bot, `discord.js` and `discord-api-types`. `discord.js` is a library built off of Discord's Application Programming Interface, or API. It allows you to get and send data directly via Discord. This is an incredibly powerful feature, and makes your job os creating a bot much easier. `discord-api-types` is an extension of `discord.js` that allows you to create custom scripts and commands for Discord applications. We will use this library later to write some basic commands for the bot.
 
 Open the `app.js` file, and at the top, write:
 
 ```js
 // Require the neccessary libraries
+const fs = require('fs');
 const discord = require("discord.js");
 const { token } = require('./token.json');
 
@@ -79,16 +80,44 @@ const { token } = require('./token.json');
 // Create client instance for your bot to log in
 const client = new discord.Client({ intents: [discord.Intents.FLAGS.GUILDS] });
 
-// When you bot has logged in, it will print out in the console "Ready!"
-client.once('ready', () => {
-    console.log('Ready!');
+// Brings in commands from your /commands folder
+client.commands = new Collection();
+const commandFiles = fs.readdirSync('./commands').filter(file => file.endsWith('.js'));
+
+// Imports commands
+for (const file of commandFiles) {
+	const command = require(`./commands/${file}`);
+	client.commands.set(command.data.name, command);
+}
+
+// Runs your commands
+client.on('interactionCreate', async interaction => {
+	if (!interaction.isCommand()) return;
+
+	const command = client.commands.get(interaction.commandName);
+
+	if (!command) return;
+
+	try {
+		await command.execute(interaction);
+	} catch (error) {
+		console.error(error);
+		await interaction.reply({ content: 'There was an error while executing this command!', ephemeral: true });
+	}
 });
 
-// Your bot will use this token to log in
+// When you bot has logged in, it will print out in the console "Ready!"
+client.once('ready', () => {
+    console.log('Bot is online!');
+});
+
+// Your bot will use its token to log in and connect to your server
 client.login(token);
 ```
 
 This code will log your bot into Discord and allow it to start running. Next, let's add some basic functionality for the bot to perform.
+
+---
 
 ## Adding Basic Commands and Functions
 
@@ -97,18 +126,16 @@ Because this guide is only for a very simple and small-scale bot, we are able to
 To avoid this, we will use modular architecture to store different commands in different files. Our directory should end up looking something similar to this:
 
 ```
-
-discord_bot/
-  |-- node_modules/
-  |-- token.json
-  |-- app.js
-  |-- package.json
-  |-- package-lock.json
-  |-- runCommands.js
-  |-- commands/
-        |-- command1.js
-        |-- command2.js
-
+    discord_bot/
+        |-- node_modules/
+        |-- token.json
+        |-- app.js
+        |-- package.json
+        |-- package-lock.json
+        |-- runCommands.js
+        |-- commands/
+                |-- command1.js
+                |-- command2.js
 ```
 
 Now that we have an idea of what a bot should look like, let's start by making the `runCommands.js` file.
@@ -117,23 +144,109 @@ Now that we have an idea of what a bot should look like, let's start by making t
 
 ### runCommands.js
 
-The first thing we will have to do is create a JavaScript file named `runCommands.js`. Then we will add in the initial code. At the top of the file, add:
+1. First, go back to your console and enter `npm install discord.js @discordjs/rest discord-api-types`. This is an extension for the `discord.js` library that you can use to write applications and functions using a method called REST API (For a detailed explanation of REST API, read [this article](https://www.ibm.com/cloud/learn/rest-apis)).<br><br>
 
-```js
-const { SlashCommandBuilder } = require('@discordjs/builders');
-const { REST } = require('@discordjs/rest');
-const { Routes } = require('discord-api-types/v10');
-const { clientId, guildId, token } = require('./config.json');
+2. Next, create a JavaScript file inside your folder with all the bot files named `runCommands.js`. Then we will add in the initial code. At the top of the file, add:<br><br>
+    ```js
+    // Require files and modules
+    const fs = require('fs');
+    const { REST } = require('@discordjs/rest');
+    const { Routes } = require('discord-api-types/v10');
+    const { clientID, guildID, token } = require('./config.json');
 
-const rest = new REST({ version: '9' }).setToken(token);
+    // Creates the list of commands from the /commands folder
+    const commands = [];
+    const commandFiles = fs.readdirSync('./commands').filter(file => file.endsWith('.js'));
 
-rest.put(Routes.applicationGuildCommands(clientId, guildId), { body: commands })
-	.then(() => console.log('Successfully registered application commands.'))
-	.catch(console.error);
-```
+    // Requires the commands into the app.js file
+    for (const file of commandFiles) {
+        const command = require(`./commands/${file}`);
+        commands.push(command.data.toJSON());
+    }
 
-This will import in all the required libraries to create your own commands for your Discord bot.
+    // Creates REST API token
+    const rest = new REST({ version: '10' }).setToken(token);
+
+    // Verifies all commands are successfully read or will return an error 
+    rest.put(Routes.applicationGuildCommands(clientID, guildID), { body: commands })
+        .then(() => console.log('Successfully registered application commands.'))
+        .catch(console.error);
+    ``` 
+    This will import in all the required libraries to create your own commands for your Discord bot.<br><br>
+
+3. Now the file is set up, we need to add the `clientID` and `guildID` into your `token.json` file. The client ID is also the application ID for your application. You can get this ID by going back to the application page in the developer portal, selecting your application, then clicking ***Copy*** under the Application ID. For your guild ID, go to your server and right click the server's name or icon. You will see an option, ***Copy ID***.<br><br>
+   
+4. Now that you have both your client and guild IDs, inside your `token.json` folder, add both IDs so you get:<br><br>
+
+    ```json
+    {
+        "token": "<Your token here>",
+        "guildID": "<Your guild ID here>",
+        "clientID": "<Your client ID here>"
+    }
+    ```
+| ![important](../graphics/important2.png) |
+|---|
+| You must store your guild and client IDs as ***strings*** not ***numbers***. You will not be able to run your application if you do so. |
+
+
+
+Now that we've set up the bot to register commands from the `/command` folder, we can make the `/command` folder and start adding functions.
 
 ---
 
 ### Commands
+
+First, inside your main project folder, create a new folder named, `commands`. This folder will store all of the JavaScript files containing all of your different functions.
+
+Now let's add two different commands to our bot. The first command will be a simple reply that we can trigger by greeting the bot, and the second will generate a random number between 1 and 100.
+
+| ![warning](../graphics/important2.png) |
+|---|
+| When you create a slash command using the `SlashCommandBuilder` library, you will have to set a name for the command using the `.setName()` method. All command names must be all lowercase letters, they cannot contain numbers or uppercase letters, or else they will not work. |
+
+---
+
+#### hello.js
+
+Create a new file inside your `/commands` folder named `hello.js`. Inside this file, write:
+
+```js
+const { SlashCommandBuilder } = require('@discordjs/builders');
+
+module.exports = {
+    data: new SlashCommandBuilder()
+        .setName('hi')
+        .setDescription('Greets the user back'),
+    async execute(interaction) {
+        return interaction.reply(`Hi ${interaction.user.username}!`);
+    },
+};
+```
+
+This command will activate whenever you type `/hi` in your server, and the bot will reply back to you with _`Hi <Your username>`_.
+<br>
+
+#### randomNumber.js
+
+Create another file inside your `/commands` folder named `randomNumber.js`. Inside this file, write:
+
+```js
+const { SlashCommandBuilder } = require('@discordjs/builders');
+const getRandomNumber = (range) => Math.floor(Math.random() * range);
+
+module.exports = {
+	data: new SlashCommandBuilder()
+		.setName('number')
+		.setDescription('Generates a number between 0 and 100'),
+	async execute(interaction) {
+		return interaction.reply(`Your number is ${getRandomNumber(100)}!`);
+	},
+};
+```
+
+This command will activate whenever you type `/number` in your server, and the bot will reply back with `Your number is <number>!`
+
+---
+
+Congratulations! You've now added some functions to your bot! If you want to add more commands, just follow the same steps above, and change the name, description, and reply as you see fit!
