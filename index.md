@@ -28,18 +28,17 @@ To follow each step of the process, you need the following:
 
   * Access to a computer
   * Secure internet connection
-  * A Discord account 
   * Working knowledge of Javascript and Node.js
-  * Basic understanding of synchronous and callback functions in Javascript
+  * Basic understanding of [async and await](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Async_await) functions in Javascript
 
 ## Software Requirements
 Before proceeding, ensure you have the following installed:
 
-  * Node.js V16.9.0+
+  * Node.js V16.9.0+ ([Download](https://nodejs.org/en/))
   * An Integrated Development Environment (IDE)
-    * Visual Studio Code (Recommended), WebStorm, Atom, Eclipse, Notepad++ (Not recommended)
+    * [Visual Studio Code (Recommended)](https://code.visualstudio.com/download), [WebStorm](https://www.jetbrains.com/webstorm/download/), [Atom](https://atom.io/), [Eclipse](https://www.eclipse.org/downloads/packages/), [Notepad++ (Not recommended)](https://notepad-plus-plus.org/downloads/)
   * Any up-to-date browser
-    * Google Chrome, Firefox 38+, Opera, Microsoft Edge 17+, Chromium 79+, or Safari 11+
+    * [Google Chrome](https://www.google.com/intl/en_ca/chrome/), [Firefox 38+](https://www.mozilla.org/en-CA/firefox/products/), [Opera](https://www.opera.com/), [Microsoft Edge 17+](https://www.microsoft.com/en-us/edge), [Safari 11+](https://support.apple.com/downloads/safari), or [Chromium 79+](https://www.chromium.org/chromium-projects/)
 
 ## Typographical Conventions
 

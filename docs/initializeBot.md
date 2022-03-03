@@ -24,7 +24,7 @@ Now that we've added the bot to our server, we can start building the brains and
 
 ## Creating the Initial Files
 
-First, create a new folder to contain all of your files. Inside your folder, create three new files:
+First, create a new folder to contain all of your files. Inside your folder, create two new files:
 
 * `app.js`
 * `token.json`
@@ -121,9 +121,9 @@ This code will log your bot into Discord and allow it to start running. Next, le
 
 ## Adding Basic Commands and Functions
 
-Because this guide is only for a very simple and small-scale bot, we are able to put all the commands inside the `app.js` file. But as bots grow over time, the feasability of this will greatly decrease. As we add more and more functionality, we will fall victim to a trap known as "if-else hell".
+Because this guide is only for a very simple and small-scale bot, we are able to put all the commands inside the `app.js` file. But as bots grow over time, the feasability of this will greatly decrease. As we add more and more functionality, we will fall victim to a trap known as ["if-else hell".](https://www.freecodecamp.org/news/so-youre-in-if-else-hell-here-s-how-to-get-out-of-it-fc6407fec0e/)
 
-To avoid this, we will use modular architecture to store different commands in different files. Our directory should end up looking something similar to this:
+To avoid this, we will use [modular architecture](https://codesource.io/how-to-modularize-javascript-code/) to store different commands in different files. Our directory should end up looking something similar to this:
 
 ```
     discord_bot/
@@ -152,7 +152,7 @@ Now that we have an idea of what a bot should look like, let's start by making t
     const fs = require('fs');
     const { REST } = require('@discordjs/rest');
     const { Routes } = require('discord-api-types/v10');
-    const { clientID, guildID, token } = require('./config.json');
+    const { clientID, guildID, token } = require('./token.json');
 
     // Creates the list of commands from the /commands folder
     const commands = [];
