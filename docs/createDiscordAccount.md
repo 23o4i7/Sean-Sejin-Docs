@@ -18,9 +18,9 @@ nav_order: 2
 ## Creating a New Discord Account
 {: .d-inline-block }
 
-| ![warning](../graphics/warning2.png) |
+<!-- | ![warning](../graphics/warning2.png) |
 |-----|
-|It is recommended for users to have a separate account to create and manage Discord applications, which include Discord bots. All Discord applications require your API key and client token, both of which can be used maliciously against you. Use personal accounts at your own risk. For users who wish to manage bots on an existing account and have a server where you are the owner, you may skip this step and jump ahead to the next section, [Enabling Developer Mode on Your Discord Account.](https://23o4i7.github.io/Sean-Sejin-Docs/docs/createDiscordAccount/#enabling-developer-mode) To create a new server, go to the next section, [Creating a New Discord Server.](https://23o4i7.github.io/Sean-Sejin-Docs/docs/createDiscordAccount/#creating-a-discord-server) |
+|It is recommended for users to have a separate account to create and manage Discord applications, which include Discord bots. All Discord applications require your API key and client token, both of which can be used maliciously against you. Use personal accounts at your own risk. For users who wish to manage bots on an existing account and have a server where you are the owner, you may skip this step and jump ahead to the next section, [Enabling Developer Mode on Your Discord Account.](https://23o4i7.github.io/Sean-Sejin-Docs/docs/createDiscordAccount/#enabling-developer-mode) To create a new server, go to the next section, [Creating a New Discord Server.](https://23o4i7.github.io/Sean-Sejin-Docs/docs/createDiscordAccount/#creating-a-discord-server) | -->
 
 First, go to Discord's [account creation page](https://discord.com/register) on any device and fill out the ***Create An Account*** form to create a new Discord account.
 

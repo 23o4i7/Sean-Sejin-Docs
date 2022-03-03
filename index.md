@@ -12,7 +12,7 @@ A Discord Bot is created by a user with a developer account to automate various 
 
 ## Intended User
 This document is targeted towards to the following users:
-Any users who want to create a Discord Bot.
+Any beginner developers who want to create a bot using Discord's API.
 
 ## Prerequisites
 To follow each step of the process, you need the following:
