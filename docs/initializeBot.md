@@ -185,6 +185,7 @@ Now that we have an idea of what a bot should look like, let's start by making t
         "clientID": "<Your client ID here>"
     }
     ```
+
 | ![important](../graphics/important2.png) |
 |---|
 | You must store your guild and client IDs as ***strings*** not ***numbers***. You will not be able to run your application if you do so. |
@@ -247,6 +248,5 @@ module.exports = {
 
 This command will activate whenever you type `/number` in your server, and the bot will reply back with `Your number is <number>!`
 
----
-
+<br>
 Congratulations! You've now added some functions to your bot! If you want to add more commands, just follow the same steps above, and change the name, description, and reply as you see fit!
