@@ -14,6 +14,15 @@ A Discord Bot is created by a user with a developer account to automate various 
 This document is targeted towards to the following users:
 Any beginner developers who want to create a bot using Discord's API.
 
+## Procedures Overview
+The main sections of the documentation are summarized below:
+
+* Create a Discord Developer Account
+* Register a New Bot on Discord
+* Authorize and Connect the Bot to Your Server
+* Initalize the Bot
+* Running Your Bot
+
 ## Prerequisites
 To follow each step of the process, you need the following:
 
@@ -22,7 +31,6 @@ To follow each step of the process, you need the following:
   * A Discord account 
   * Working knowledge of Javascript and Node.js
   * Basic understanding of synchronous and callback functions in Javascript
-
 
 ## Software Requirements
 Before proceeding, ensure you have the following installed:
