@@ -18,11 +18,9 @@ nav_order: 3
 ## Creating a new Discord application
 In this task, we are going to walk through how to create a new Discord application in order to work with the library and the Discord API in general.
 
-1. Once you enable developer mode with your account, navigate to the [Application page.](https://discord.com/developers/applications)<br><br>![newApplication1](../graphics/createApplication.png)<br><br>
+1. Once you enable developer mode with your account, navigate to the [Application page](https://discord.com/developers/applications) and click ***New Application***<br><br>![newApplication2](../graphics/createApplicationA.png)<br><br>
 
-2. When you are on the Application page, you can see the button, _**New Application**_.<br><br>![newApplication2](../graphics/createApplicationA.png)<br><br>
-
-3. Click the button, then you will see a pop up asking you to create the application name. Give the application a name and click _**Create**_.<br><br>![newApplication3](../graphics/newApplication3.png)
+1. Click the button, then you will see a pop up asking you to create the application name. Give the application a name and click _**Create**_.<br><br>![newApplication3](../graphics/newApplication3.png)
 
 ---
 

@@ -15,7 +15,6 @@ nav_order: 5
 
 ---
 
-
 | ![warning](../graphics/warning2.png) |
 |---|
 | Before continuing, ensure that you have an IDE like Visual Studio Code, and Node.js installed on your machine. Next, check your Node.js version by opening any terminal, such as Command Prompt on Windows, or Terminal on a Mac or Linux machine. Inside the terminal, type `node -v`, and that will show you the Node.js version installed on your machine. Make sure that the version is greater than _`V16.9.0`_. |
