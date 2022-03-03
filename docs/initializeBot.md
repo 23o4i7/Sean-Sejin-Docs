@@ -66,7 +66,7 @@ This will keep your token more secure, as it is not directly accessible to anyon
 
 By itself, JavaScript does not have the capability to create a bot that is integrated with Discord. This requires the use of libraries and modules that we will have to install on top  of our project.
 
-First, go back to the terminal, and type in `npm install nodemon discord.js discord-api-types`. This will install three libraries, `nodemon`, which we will use to run the bot, `discord.js` and `discord-api-types`. `discord.js` is a library built off of Discord's Application Programming Interface, or API. It allows you to get and send data directly via Discord. This is an incredibly powerful feature, and makes your job os creating a bot much easier. `discord-api-types` is an extension of `discord.js` that allows you to create custom scripts and commands for Discord applications. We will use this library later to write some basic commands for the bot.
+First, go back to the terminal, and type in `npm install nodemon discord.js discord-api-types`. This will install three libraries, `nodemon`, which we will use to run the bot, `discord.js` and `discord-api-types`. `discord.js` is a library built off of Discord's API. This allows you to get and send data directly via Discord, which is an incredibly powerful feature, and makes your job os creating a bot much easier. `discord-api-types` is an extension of `discord.js` that allows you to create custom scripts and commands for Discord applications. We will use this library later to write some basic commands for the bot.
 
 Open the `app.js` file, and at the top, write:
 
@@ -104,12 +104,12 @@ client.on('interactionCreate', async interaction => {
 		console.error(error);
 		await interaction.reply({ content: 'There was an error while executing this command!', ephemeral: true });
 	}
-});
+})
 
 // When you bot has logged in, it will print out in the console "Ready!"
 client.once('ready', () => {
     console.log('Bot is online!');
-});
+})
 
 // Your bot will use its token to log in and connect to your server
 client.login(token);
@@ -174,9 +174,11 @@ Now that we have an idea of what a bot should look like, let's start by making t
     ``` 
     This will import in all the required libraries to create your own commands for your Discord bot.<br><br>
 
-3. Now the file is set up, we need to add the `clientID` and `guildID` into your `token.json` file. The client ID is also the application ID for your application. You can get this ID by going back to the application page in the developer portal, selecting your application, then clicking ***Copy*** under the Application ID. For your guild ID, go to your server and right click the server's name or icon. You will see an option, ***Copy ID***.<br><br>
+3. Now the file is set up, we need to add the `clientID` and `guildID` into your `token.json` file. The client ID is also the application ID for your application. You can get this ID by going back to the application page in the developer portal, selecting your application, then clicking ***Copy*** under the Application ID.  Same with your bot's token, your client and guild IDs are sensitive and ***should never be shared***.<br><br>![guildID](../graphics/guildid.png)<br><br>
    
-4. Now that you have both your client and guild IDs, inside your `token.json` folder, add both IDs so you get:<br><br>
+4. For your guild ID, go to your server and right click the server's name or icon. You will see an option, ***Copy ID***.<br><br>![clientid](../graphics/clientID.png)<br><br>
+
+5. Now that you have both your client and guild IDs, inside your `token.json` folder, add both IDs so you get:<br><br>
 
     ```json
     {
@@ -185,6 +187,8 @@ Now that we have an idea of what a bot should look like, let's start by making t
         "clientID": "<Your client ID here>"
     }
     ```
+
+<br>
 
 | ![important](../graphics/important2.png) |
 |---|
