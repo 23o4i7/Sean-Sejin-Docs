@@ -42,7 +42,8 @@ This part will help you how to register the new application to create a bot.
 
 NOTE
 {: .label .label-yellow }
+<br>
 
 IMPORTANT
 {: .label .label-yellow }
-This token is your bot’s password, so _**be extra careful**_ not to share it with anyone. It will give others authorization to log in to your bot. If the token gets shared, click the _**Regenerate**_ to create a new token for your bot.
+> This token is your bot’s password, so _**be extra careful**_ not to share it with anyone. It will give others authorization to log in to your bot. If the token gets shared, click the _**Regenerate**_ to create a new token for your bot.
