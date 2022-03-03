@@ -19,7 +19,7 @@ To follow each step of the process, you need the following:
 
   * Access to a computer
   * Secure internet connection
-  * A developer account on Discord 
+  * A Discord account 
   * Working knowledge of Javascript and Node.js
   * Basic understanding of synchronous and callback functions in Javascript
 
