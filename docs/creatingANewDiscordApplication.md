@@ -36,10 +36,11 @@ This part will help you how to register the new application to create a bot.
 | ![important](../graphics/important2.png) |
 |---|
 | If you want to keep your bot as ***public***, please first read [this article](https://support-dev.discord.com/hc/en-us/articles/4404772028055-Message-Content-Privileged-Intent-for-Verified-Bots) regarding Discord's new changes to their API regarding verified bots. |
+
 <br>
 
-4. Now, click the _**Copy**_ to get your token. You will need this token when you start writing code for the bot. 
-<br><br>![newApplication1](../graphics/registration4.png)
+Click _**Copy**_ to get your token. You will need this token when you start writing code for the bot. 
+<br>![newApplication1](../graphics/registration4.png)
 
 | ![warning](../graphics/warning2.png) |
 |---|
