@@ -24,4 +24,4 @@ In this task, inviting your bot to a server is the main part. Create an invite U
 
 6. You should be able to see the bot in your server on the users list.<br><br>![newApplication1](../graphics/authorization6.png)
 
-Now that we've joined the bot to our server, we can start writing the code for the bot.
+Congratulations! Now that we've joined the bot to our server, we can start writing the code for the bot.

@@ -31,9 +31,20 @@ This part will help you how to register the new application to create a bot.
 
 2. Go to the _**Bot**_ tab and click _**Add Bot**_. You should confirm by clicking _**Yes, do it!**_<br><br>![newApplication1](../graphics/registration2.png)<br><br>
 
-3. After this step, you will see the default settings for Public Bot(checked) and Require OAuth2 Code Grant(unchecked). However, make both _**unchecked**_ to keep your bot private.<br><br>![newApplication1](../graphics/registration3.png)<br><br>
+3. After this step, you will see the default settings for Public Bot (checked) and Require OAuth2 Code Grant (unchecked). Make both _**unchecked**_ to keep your bot private for now, then save your settings.<br><br>![newApplication1](../graphics/registration3.png)<br><br>
 
-4. Congratulations! Your bot has been created. Now, click the _**Copy**_ to copy the token. 
+| ![important](../graphics/important2.png) |
+|---|
+| If you want to keep your bot as ***public***, please first read [this article](https://support-dev.discord.com/hc/en-us/articles/4404772028055-Message-Content-Privileged-Intent-for-Verified-Bots) regarding Discord's new changes to their API regarding verified bots. |
+<br>
+
+4. Now, click the _**Copy**_ to get your token. You will need this token when you start writing code for the bot. 
 <br><br>![newApplication1](../graphics/registration4.png)
 
-This token is your bot’s password, and ***under no circumstances should it be shared***. It will give others authorization to log in to your bot. If the token gets shared, click the _**Regenerate**_ to create a new token for your bot.
+| ![warning](../graphics/warning2.png) |
+|---|
+| This token is your bot’s password, and ***under no circumstances should it be shared***. It will give others authorization to log in to your bot. If you think your token has been compromised, click ***Regenerate*** to create a new token for your bot. |
+
+<br>
+
+Congratulations! You've registered a bot on Discord! Now we can add it to our server to work with.
