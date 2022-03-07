@@ -1,6 +1,6 @@
 # The User Guide of How to Create a Discord Bot
 > The user guide helps Discord users how to create a Discord Bot. It will provide the simplest and easiest way to create your own Discord Bot. If you would like to see the full description of this user guide, please follow the link.
-> [https://23o4i7.github.io/Sean-Sejin-Docs/](https://www.example.com).
+> [23o4i7.github.io/Sean-Sejin-Docs/](https://www.example.com).
 
 ## Table of Contents
 * [General Info](#general-information)
