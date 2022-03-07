@@ -27,9 +27,9 @@ Now that we've added the bot to our server, we can start building the brains and
    * `app.js`
    * `token.json`<br><br>
 
-2. Open a terminal and type `cd <folder path>` to move into your project folder ([How to get folder path in Windows](https://techdows.com/2022/01/windows-11-copy-as-path-and-its-shortcut.html) or [How to get folder path in MacOS](https://www.igeeksblog.com/how-to-copy-file-folder-path-from-mac-finder/#:~:text=Triple%2Dclick%20the%20file%20path,V%20wherever%20it%20is%20required.)). ***Do not*** close this terminal, unless you are confident you can easily set it up again. You will need this instance of the terminal to complete building your bot.<br><br>
+2. Open a terminal ([Terminal in Windows](https://www.wikihow.com/Open-Terminal-in-Windows) or [Terminal in MacOS](https://support.apple.com/en-ca/guide/terminal/apd5265185d-f365-44cb-8b09-71a064a42125/mac)) and type `cd <folder path>` to move into your project folder ([How to get folder path in Windows](https://techdows.com/2022/01/windows-11-copy-as-path-and-its-shortcut.html) or [How to get folder path in MacOS](https://www.igeeksblog.com/how-to-copy-file-folder-path-from-mac-finder/#:~:text=Triple%2Dclick%20the%20file%20path,V%20wherever%20it%20is%20required.)). ***Do not*** close this terminal, unless you are confident you can easily set it up again. You will need this instance of the terminal to complete building your bot.<br><br>
 
-3. Enter `npm init` in the terminal. This will initialize the folder and allow you to easily keep track of files and different libraries you will need to use for this project. You will be prompted by this menu:<br><br>![npminit](../graphics/npminit.png)<br><br>
+3. Enter `npm init` in the terminal. This allows you to easily keep track of files and different libraries you will need to use for this project. You will then be prompted by this menu:<br><br>![npminit](../graphics/npminit.png)<br><br>
 
 4. Hit **Enter** until you see the prompt for _`test command`_, or 4 times. For this field, write `nodemon app.js`. It will setup `nodemon`, a useful tool for any web application.
 
@@ -53,7 +53,7 @@ By itself, JavaScript does not have the capability to create a bot that is integ
 1. Type in `npm install nodemon discord.js discord-api-types`. This will install three libraries, `nodemon`, `discord.js` and `discord-api-types`.<br><br>
    * `nodemon` is a library that watches your web app's directory for any changes or modifications. It will automatically restart or stop your app in the event of a modification or an error.
    * `discord.js` is a library built off of Discord's API. This allows you to get and send data directly via Discord, which is an incredibly powerful feature, and makes your job os creating a bot much easier.
-   * `discord-api-types` is an extension of `discord.js` that allows you to create custom scripts and commands for Discord applications. We will use this library later to write some basic commands for the bot.
+   * `discord-api-types` is an extension of `discord.js` that allows you to create custom scripts and commands for Discord applications. We will use this library later to write some basic commands for the bot.<br><br>
 
 2. In the `app.js` file, and at the top, write:<br><br>
     ```js
@@ -94,7 +94,7 @@ By itself, JavaScript does not have the capability to create a bot that is integ
         }
     })
 
-    // When you bot has logged in, it will print out in the console "Bot is online!"
+    // When the bot has logged in, it will print out in the console "Bot is online!"
     client.once('ready', () => {
         console.log('Bot is online!');
     })
@@ -130,7 +130,7 @@ Now that we have an idea of what our bot should look like, let's start by making
 
 ### runCommands.js
 
-1. Enter `npm install @discordjs/rest discord-api-types` in your console. This is an extension for the `discord.js` library that you can use to write applications and functions using [REST API](https://www.ibm.com/cloud/learn/rest-apis).<br><br>
+1. Enter `npm install @discordjs/rest discord-api-types` in your console. This is an extension for the `discord.js` library that you can use to write applications and functions using [REST API](https://www.redhat.com/en/topics/api/what-is-a-rest-api).<br><br>
 
 2. Create a JavaScript file inside your project folder named `runCommands.js`. In this file, add:<br><br>
     ```js
@@ -161,9 +161,9 @@ Now that we have an idea of what our bot should look like, let's start by making
         .catch(console.error);
     ``` 
 
-3. Get your client ID by going back to your application in the developer portal, then clicking ***Copy*** under the Application ID. Save this client ID with your bot's token.<br><br>![guildID](../graphics/clientid.png)<br><br>
+3. Get your client ID by going back to your application in the developer portal, then clicking ***Copy*** under the Application ID. Save this client ID with your bot's token.<br><br>![clientID](https://github.com/23o4i7/Sean-Sejin-Docs/blob/gh-pages/graphics/clientID.png?raw=true)<br><br>
    
-4. Get your guild ID by going back to your server and right clicking the server's name or icon. Select ***Copy ID***, and save this with your bot's token and client ID.<br><br>![clientid](../graphics/guildid.png)<br><br>
+4. Get your guild ID by going back to your server and right clicking the server's name or icon. Select ***Copy ID***, and save this with your bot's token and client ID.<br><br>![guildID](../graphics/guildid.png)<br><br>
 
 5. Put your [bot's token](https://23o4i7.github.io/Sean-Sejin-Docs/docs/creatingANewDiscordApplication/), client ID, and guild ID inside the `token.json` folder. <br><br>
 
