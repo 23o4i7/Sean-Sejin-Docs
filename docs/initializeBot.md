@@ -45,7 +45,7 @@ Once it completes, you should see two new files inside your folder:
 
 These files will store data and keep track of the different libraries that you may use in your project. Inside the ***package.json*** folder, you can also enter custom scripts that you can use for any purpose, for example, testing. 
 
-Next, open the `token.json` folder. You will need to get your special token you received when you [created a new bot](https://23o4i7.github.io/Sean-Sejin-Docs/docs/creatingANewDiscordApplication/). Once you've got it, inside the file, write:
+<!-- Next, open the `token.json` folder. You will need to get your special token you received when you [created a new bot](https://23o4i7.github.io/Sean-Sejin-Docs/docs/creatingANewDiscordApplication/). Once you've got it, inside the file, write:
 
 ```json
 {
@@ -53,7 +53,7 @@ Next, open the `token.json` folder. You will need to get your special token you 
 }
 ```
 
-This will keep your token more secure, as it is not directly accessible to anyone who can see your bot.
+This will keep your token more secure, as it is not directly accessible to anyone who can see your bot. -->
 
 | ![important](../graphics/important2.png) |
 |---|
@@ -65,7 +65,11 @@ This will keep your token more secure, as it is not directly accessible to anyon
 
 By itself, JavaScript does not have the capability to create a bot that is integrated with Discord. This requires the use of libraries and modules that we will have to install on top  of our project.
 
-First, go back to the terminal, and type in `npm install nodemon discord.js discord-api-types`. This will install three libraries, `nodemon`, which we will use to run the bot, `discord.js` and `discord-api-types`. `discord.js` is a library built off of Discord's API. This allows you to get and send data directly via Discord, which is an incredibly powerful feature, and makes your job os creating a bot much easier. `discord-api-types` is an extension of `discord.js` that allows you to create custom scripts and commands for Discord applications. We will use this library later to write some basic commands for the bot.
+First, go back to the terminal, and type in `npm install nodemon discord.js discord-api-types`. This will install three libraries, `nodemon`, `discord.js` and `discord-api-types`.
+
+* `nodemon` is a library that watches your web app's directory for any changes or modifications. It will automatically restart or stop your app in the event of a modification or an error.
+* `discord.js` is a library built off of Discord's API. This allows you to get and send data directly via Discord, which is an incredibly powerful feature, and makes your job os creating a bot much easier.
+* `discord-api-types` is an extension of `discord.js` that allows you to create custom scripts and commands for Discord applications. We will use this library later to write some basic commands for the bot.
 
 Open the `app.js` file, and at the top, write:
 
@@ -80,7 +84,7 @@ const { token } = require('./token.json');
 const client = new discord.Client({ intents: [discord.Intents.FLAGS.GUILDS] });
 
 // Brings in commands from your /commands folder
-client.commands = new Collection();
+client.commands = new discord.Collection();
 const commandFiles = fs.readdirSync('./commands').filter(file => file.endsWith('.js'));
 
 // Imports commands
@@ -143,7 +147,7 @@ Now that we have an idea of what a bot should look like, let's start by making t
 
 ### runCommands.js
 
-1. First, go back to your console and enter `npm install discord.js @discordjs/rest discord-api-types`. This is an extension for the `discord.js` library that you can use to write applications and functions using a method called REST API (For a detailed explanation of REST API, read [this article](https://www.ibm.com/cloud/learn/rest-apis)).<br><br>
+1. First, go back to your console and enter `npm install @discordjs/rest discord-api-types`. This is an extension for the `discord.js` library that you can use to write applications and functions using a method called REST API (For a detailed explanation of REST API, read [this article](https://www.ibm.com/cloud/learn/rest-apis)).<br><br>
 
 2. Next, create a JavaScript file inside your folder with all the bot files named `runCommands.js`. Then we will add in the initial code. At the top of the file, add:<br><br>
     ```js
@@ -241,7 +245,7 @@ const getRandomNumber = (range) => Math.floor(Math.random() * range);
 
 module.exports = {
 	data: new SlashCommandBuilder()
-		.setName('number')
+		.setName('randomnumber')
 		.setDescription('Generates a number between 0 and 100'),
 	async execute(interaction) {
 		return interaction.reply(`Your number is ${getRandomNumber(100)}!`);
