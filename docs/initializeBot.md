@@ -165,12 +165,7 @@ Now that we have an idea of what our bot should look like, let's start by making
    
 4. Get your guild ID by going back to your server and right clicking the server's name or icon. Select ***Copy ID***, and save this with your bot's token and client ID.<br><br>![clientid](../graphics/guildid.png)<br><br>
 
- | ![important](../graphics/important2.png) |
- |---|
- | Same with your bot's token, your client and guild IDs are sensitive and ***should never be shared under any circumstance***. You can regenerate your client ID if needed, but not your guild ID. |
-<br>
-
-5. Put your [bot's token](https://23o4i7.github.io/Sean-Sejin-Docs/docs/creatingANewDiscordApplication/), client ID, and guild ID inside the `token.json` folder, so you get:<br><br>
+5. Put your [bot's token](https://23o4i7.github.io/Sean-Sejin-Docs/docs/creatingANewDiscordApplication/), client ID, and guild ID inside the `token.json` folder. <br><br>
 
     ```json
     {
@@ -184,7 +179,7 @@ Now that we have an idea of what our bot should look like, let's start by making
 
 | ![important](../graphics/important2.png) |
 |---|
-| You must store your guild and client IDs as ***strings*** not ***numbers***. You will not be able to run your application if you do so. |
+| Same with your bot's token, your client and guild IDs are sensitive and ***should never be shared under any circumstance***. You can regenerate your client ID if needed, but not your guild ID.<br><br>You must store your guild and client IDs as ***strings*** not ***numbers***. You will not be able to run your application if you do so. |
 
 
 
