@@ -3,10 +3,13 @@
 > [The User Guide for Creating a Discord Bot](https://23o4i7.github.io/Sean-Sejin-Docs).
 
 ## Table of Contents
-* [General Info](#general-information)
-* [Technology used](#technology-used)
-* [Features](#features)
-* [Contact](#contact)
+
+- [The User Guide of How to Create a Discord Bot](#the-user-guide-of-how-to-create-a-discord-bot)
+  - [Table of Contents](#table-of-contents)
+  - [General Information](#general-information)
+  - [Technologies used](#technologies-used)
+  - [Features](#features)
+  - [Contact](#contact)
 
 
 ## General Information
@@ -15,15 +18,13 @@
 - This project will cover the steps of creating a Discord account, Discord account settings with enabling developer mode, registering a new bot on Discord, authorizing and connecting the bot to Discord server, and initializing and running your bot.
 
 
-## Technology used
+## Technologies used
+- Node.js
 - Discord
-- Node.js V16.9.0+ (Download)
-- Visual Studio Code (Recommended), WebStorm, Atom, Eclipse, Notepad++ (Not recommended)
-- Google Chrome, Firefox 38+, Opera, Microsoft Edge 17+, Safari 11+, or Chromium 79+
 
 
 ## Features
-The featrues of Creating a Discord Bot are:
+The features of creating a Discord bot are:
 - To use bots to welcome new members, moderate conversations, and restrict users who break the rules.
 - To create and maintain an engaging online community. 
 - To use bots to add music, games, and memes to your server.
@@ -31,5 +32,3 @@ The featrues of Creating a Discord Bot are:
 
 ## Contact
 Created by [Sejin Oh](soh52@my.bcit.ca) and [Sean Ng](sng184@my.bcit.ca) - feel free to contact us!
-
-

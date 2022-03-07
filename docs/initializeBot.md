@@ -149,7 +149,7 @@ Now that we have an idea of what a bot should look like, let's start by making t
 
 1. First, go back to your console and enter `npm install @discordjs/rest discord-api-types`. This is an extension for the `discord.js` library that you can use to write applications and functions using a method called [REST API](https://www.ibm.com/cloud/learn/rest-apis).<br><br>
 
-2. Next, create a JavaScript file inside your folder with all the bot files named `runCommands.js`. Then we will add in the initial code. At the top of the file, add:<br><br>
+2. Next, create a JavaScript file inside your folder with all the bot files named `runCommands.js`. In the file, add:<br><br>
     ```js
     // Require files and modules
     const fs = require('fs');
@@ -177,7 +177,7 @@ Now that we have an idea of what a bot should look like, let's start by making t
     ``` 
     This will import in all the required libraries to create your own commands for your Discord bot.<br><br>
 
-3. Now the file is set up, we need to add the `clientID` and `guildID` into your `token.json` file. You can get your client ID by going back to the application page in the developer portal, selecting your application, then clicking ***Copy*** under the Application ID.<br><br>![guildID](../graphics/clientid.png)<br><br>
+3. Now the file is set up, we need to add the `clientID` and `guildID` into your `token.json` file. You can get your client ID by going back to your application in the developer portal, then clicking ***Copy*** under the Application ID.<br><br>![guildID](../graphics/clientid.png)<br><br>
    
 4. For your guild ID, go to your server and right click the server's name or icon. You will see an option, ***Copy ID***.<br><br>![clientid](../graphics/guildid.png)<br><br>
 

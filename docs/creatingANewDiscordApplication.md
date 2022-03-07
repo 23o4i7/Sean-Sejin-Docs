@@ -20,7 +20,7 @@ In this task, we are going to walk through how to create a new Discord applicati
 
 1. Once you enable developer mode with your account, navigate to the [Application page](https://discord.com/developers/applications) and click ***New Application***<br><br>![newApplication2](../graphics/createapplication.png)<br><br>
 
-1. Click the button, then you will see a pop up asking you to create the application name. Give the application a name and click _**Create**_.<br><br>![newApplication3](../graphics/newApplication3.png)
+2. Click the button, then you will see a pop up asking you to create the application name. Give the application a name and click _**Create**_.<br><br>![newApplication3](../graphics/newApplication3.png)
 
 ---
 

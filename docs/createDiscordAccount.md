@@ -18,10 +18,6 @@ nav_order: 2
 ## Creating a New Discord Account
 {: .d-inline-block }
 
-<!-- | ![warning](../graphics/warning2.png) |
-|-----|
-|It is recommended for users to have a separate account to create and manage Discord applications, which include Discord bots. All Discord applications require your API key and client token, both of which can be used maliciously against you. Use personal accounts at your own risk. For users who wish to manage bots on an existing account and have a server where you are the owner, you may skip this step and jump ahead to the next section, [Enabling Developer Mode on Your Discord Account.](https://23o4i7.github.io/Sean-Sejin-Docs/docs/createDiscordAccount/#enabling-developer-mode) To create a new server, go to the next section, [Creating a New Discord Server.](https://23o4i7.github.io/Sean-Sejin-Docs/docs/createDiscordAccount/#creating-a-discord-server) | -->
-
 First, go to Discord's [account creation page](https://discord.com/register) on any device and fill out the ***Create An Account*** form to create a new Discord account.
 
 For a detailed guide to creating an account, Discord has a [Starter Guide](https://support.discord.com/hc/en-us/articles/360033931551-Getting-Started) and [Beginner's Guide](https://support.discord.com/hc/en-us/articles/360045138571-Beginner-s-Guide-to-Discord) for step-by-step instructions and an explanation about Discord's interface and features.
@@ -52,7 +48,7 @@ Under the users tab on the right side of your screen, you should see your userna
 ## Enabling Developer Mode
 {: .d-inline-block }
 
-Now that we are logged in, we will enable Discord's Developer Mode in the settings tab. Developer Mode allows users to view important information that is normally hidden, for example, a server or client ID, which developers need to manage any application. 
+After logging in, you will enable Discord's Developer Mode in the settings tab. Developer Mode allows users to view important information that is normally hidden, for example, server or client IDs, which developers need to manage applications.
 
 Now you should be on your server's main page, which looks like the first image below.
 
