@@ -198,7 +198,6 @@ Now let's add two different commands to our bot. The first command will be a sim
 | When you create a slash command using the `SlashCommandBuilder` library, you will have to set a name for the command using the `.setName()` method. All command names must be all lowercase letters, they cannot contain numbers or uppercase letters, or else they will not work. |
 
 #### hello.js
-<br>
 
 Create a new file inside your `/commands` folder named `hello.js`. Inside this file, write:
 
@@ -219,7 +218,6 @@ This command will activate whenever you type `/hi` in your server, and the bot w
 <br><br>
 
 #### randomNumber.js
-<br>
 
 Create another file inside your `/commands` folder named `randomNumber.js`. Inside this file, write:
 
