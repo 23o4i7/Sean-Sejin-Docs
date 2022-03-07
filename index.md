@@ -11,16 +11,15 @@ The purpose of this document is to guide beginners on Discord how to create a Di
 A Discord Bot is created by a user with a developer account to automate various actions on Discord. Discord’s public API is used to make Bots take some actions. The features of each bot are various by its creator or user, but there are certain basic roles that are shared among the bots, such as sending messages, modifying roles, communicating with other servers, and etc.
 
 ## Intended Users
-This document is targeted towards to the following users:
-Any beginner developers who want to create a bot using Discord's API.
+This document is targeted towards to any beginner developers who want to create a bot using Discord's API.
 
 ## Procedures Overview
-The main sections of the documentation are summarized below:
+The main sections of the documentation are as follows:
 
 * Create a Discord Developer Account
 * Register a New Bot on Discord
-* Authorize and Connect the Bot to Your Server
-* Initalize the Bot
+* Authorize and Connect Your Bot to a Server
+* Initalize Your Bot
 * Running Your Bot
 
 ## Prerequisites

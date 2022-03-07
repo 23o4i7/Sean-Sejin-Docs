@@ -29,7 +29,7 @@ For a detailed guide to creating an account, Discord has a [Starter Guide](https
 
 After creating an account, you will be prompted to create your first Discord server. You will need to create a server first before you can create your bot, because bots can only be added to servers by the server's owner. They also require special permissions only available to server owners or moderators.
 
-You should now see a screen similar to the one shown in the image below.
+A box similar to the one shown in the image below will be shown.
 
 1. Click ***Create My Own***.<br><br>![createServer01](../graphics/createFirstServer.png)<br>
 
@@ -48,7 +48,7 @@ Under the users tab on the right side of your screen, you should see your userna
 ## Enabling Developer Mode
 {: .d-inline-block }
 
-After logging in, you will enable Discord's Developer Mode in the settings tab. Developer Mode allows users to view important information that is normally hidden, for example, server or client IDs, which developers need to manage applications.
+After logging in, you will have to enable Discord's Developer Mode in the settings tab. Developer Mode allows users to view important information that is normally hidden, for example, server or client IDs, which developers need to manage applications.
 
 Now you should be on your server's main page, which looks like the first image below.
 
@@ -58,4 +58,9 @@ Now you should be on your server's main page, which looks like the first image b
 
 3. Click the ***x*** to enable Developer Mode. A second option will appear, ***Application Test Mode***. You can ignore this setting for now, it is reserved for Discord applications that require payment processes. <br><br>![devEnabled](../graphics/devModeEnabled.png)<br>
 
-Congratulations! Now that you have a Discord account set up and Developer Mode enabled, you can start making bots and applications on Discord!
+---
+
+## Conclusion
+{: .no_toc }
+
+Congratulations! Now that you have a Discord account set up and Developer Mode enabled, you can start making applications on Discord!

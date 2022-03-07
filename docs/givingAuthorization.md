@@ -20,8 +20,13 @@ In this task, inviting your bot to a server is the main part. Create an invite U
 
 4. After choosing the necessary permissions for the bot, click the _**copy**_ to get a generated URL that can be used to invite the bot to a server.<br><br>![newApplication1](../graphics/authorization4.png)<br>
 
-5. Paste the URL address into your browser, choose a server that you want to invite the bot to, and click _**Authorize**_.<br><br>![newApplication1](../graphics/authorization5.png)<br>
+5. Paste the URL address into your browser, select your server, and click _**Authorize**_.<br><br>![newApplication1](../graphics/authorization5.png)<br>
 
 6. You should be able to see the bot in your server on the users list.<br><br>![newApplication1](../graphics/authorization6.png)
+
+---
+
+## Conclusion
+{: .no_toc }
 
 Congratulations! Now that we've joined the bot to our server, we can start writing the code for the bot.
