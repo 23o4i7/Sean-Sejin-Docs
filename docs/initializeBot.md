@@ -43,7 +43,7 @@ Once it completes, you should see two new files inside your folder:
 * `package.json`
 * `package-lock.json`
 
-These files will store data and keep track of the different libraries that you may use in your project. Inside the ***package.json*** folder, you can also enter custom scripts that you can use for any purpose, for example, testing. 
+These files will store data and keep track of the different libraries that you may use in your project. Inside the ***package.json*** folder, you can also enter custom scripts that you can use for any purpose, for example, testing.
 
 <!-- Next, open the `token.json` folder. You will need to get your special token you received when you [created a new bot](https://23o4i7.github.io/Sean-Sejin-Docs/docs/creatingANewDiscordApplication/). Once you've got it, inside the file, write:
 
@@ -118,13 +118,13 @@ client.once('ready', () => {
 client.login(token);
 ```
 
-This code will log your bot into Discord and allow it to start running. Next, let's add some basic functionality for the bot to perform.
+This code will log your bot into Discord and allow it to start running. Next, let's add some basic functionality for the bot.
 
 ---
 
 ## Adding Basic Commands and Functions
 
-Because this guide is only for a very simple and small-scale bot, we are able to put all the commands inside the `app.js` file. But as bots grow over time, the feasability of this will greatly decrease. As we add more and more functionality, we will fall victim to a trap known as ["if-else hell".](https://www.freecodecamp.org/news/so-youre-in-if-else-hell-here-s-how-to-get-out-of-it-fc6407fec0e/)
+Because this guide is only for a very simple and small-scale bot, we are able to put all the commands inside the `app.js` file. But as bots grow over time, the feasability of this will greatly decrease. As we add more and more functionality, we will fall victim to a trap known as ["if-else hell"](https://www.freecodecamp.org/news/so-youre-in-if-else-hell-here-s-how-to-get-out-of-it-fc6407fec0e/).
 
 To avoid this, we will use [modular architecture](https://codesource.io/how-to-modularize-javascript-code/) to store different commands in different files. Our directory should end up looking something similar to this:
 
@@ -147,7 +147,7 @@ Now that we have an idea of what a bot should look like, let's start by making t
 
 ### runCommands.js
 
-1. First, go back to your console and enter `npm install @discordjs/rest discord-api-types`. This is an extension for the `discord.js` library that you can use to write applications and functions using a method called REST API (For a detailed explanation of REST API, read [this article](https://www.ibm.com/cloud/learn/rest-apis)).<br><br>
+1. First, go back to your console and enter `npm install @discordjs/rest discord-api-types`. This is an extension for the `discord.js` library that you can use to write applications and functions using a method called [REST API](https://www.ibm.com/cloud/learn/rest-apis).<br><br>
 
 2. Next, create a JavaScript file inside your folder with all the bot files named `runCommands.js`. Then we will add in the initial code. At the top of the file, add:<br><br>
     ```js
@@ -177,11 +177,16 @@ Now that we have an idea of what a bot should look like, let's start by making t
     ``` 
     This will import in all the required libraries to create your own commands for your Discord bot.<br><br>
 
-3. Now the file is set up, we need to add the `clientID` and `guildID` into your `token.json` file. The client ID is also the application ID for your application. You can get this ID by going back to the application page in the developer portal, selecting your application, then clicking ***Copy*** under the Application ID.  Same with your bot's token, your client and guild IDs are sensitive and ***should never be shared***.<br><br>![guildID](../graphics/guildid.png)<br><br>
+3. Now the file is set up, we need to add the `clientID` and `guildID` into your `token.json` file. You can get your client ID by going back to the application page in the developer portal, selecting your application, then clicking ***Copy*** under the Application ID.<br><br>![guildID](../graphics/clientid.png)<br><br>
    
-4. For your guild ID, go to your server and right click the server's name or icon. You will see an option, ***Copy ID***.<br><br>![clientid](../graphics/clientID.png)<br><br>
+4. For your guild ID, go to your server and right click the server's name or icon. You will see an option, ***Copy ID***.<br><br>![clientid](../graphics/guildid.png)<br><br>
 
-5. Now that you have both your client and guild IDs, inside your `token.json` folder, add both IDs so you get:<br><br>
+ | ![important](../graphics/important2.png) |
+ |---|
+ | Same with your bot's token, your client and guild IDs are sensitive and ***should never be shared*** |
+<br>
+
+5. Put your [bot's token](https://23o4i7.github.io/Sean-Sejin-Docs/docs/creatingANewDiscordApplication/), client ID, and guild ID inside the `token.json` folder, so you get:<br><br>
 
     ```json
     {
@@ -213,8 +218,6 @@ Now let's add two different commands to our bot. The first command will be a sim
 |---|
 | When you create a slash command using the `SlashCommandBuilder` library, you will have to set a name for the command using the `.setName()` method. All command names must be all lowercase letters, they cannot contain numbers or uppercase letters, or else they will not work. |
 
----
-
 #### hello.js
 
 Create a new file inside your `/commands` folder named `hello.js`. Inside this file, write:
@@ -245,7 +248,7 @@ const getRandomNumber = (range) => Math.floor(Math.random() * range);
 
 module.exports = {
 	data: new SlashCommandBuilder()
-		.setName('randomnumber')
+		.setName('number')
 		.setDescription('Generates a number between 0 and 100'),
 	async execute(interaction) {
 		return interaction.reply(`Your number is ${getRandomNumber(100)}!`);
@@ -256,4 +259,5 @@ module.exports = {
 This command will activate whenever you type `/number` in your server, and the bot will reply back with `Your number is <number>!`
 
 <br>
-Congratulations! You've now added some functions to your bot! If you want to add more commands, just follow the same steps above, and change the name, description, and reply as you see fit!
+
+Congratulations! You've now added some functions to your bot! If you want to add more commands, just follow the same steps above, and change the `.setName`, `.setDescription`, and `.reply` fields to whatever parameters you want!

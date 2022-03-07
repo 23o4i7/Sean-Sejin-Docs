@@ -27,11 +27,11 @@ In this task, we are going to walk through how to create a new Discord applicati
 ## Register the new application as a bot
 This part will help you how to register the new application to create a bot.
 
-1. After the application name is created, you will see the general information page. On the left side of the page, you will be able to see **Bot**.<br><br>![newApplication1](../graphics/registration1.png)
+1. After the application name is created, you will see the general information page. On the left side of the page, you will be able to see **Bot**.<br><br>![newApplication1](../graphics/registration1.png)<br><br>
 
-2. Go to the _**Bot**_ tab and click _**Add Bot**_. You should confirm by clicking _**Yes, do it!**_<br><br>![newApplication1](../graphics/registration2.png)
+2. Go to the _**Bot**_ tab and click _**Add Bot**_. You should confirm by clicking _**Yes, do it!**_<br><br>![newApplication1](../graphics/registration2.png)<br><br>
 
-3. After this step, you will see the default settings for Public Bot(checked) and Require OAuth2 Code Grant(unchecked). However, make both _**unchecked**_ to keep your bot private.<br><br>![newApplication1](../graphics/registration3.png)
+3. After this step, you will see the default settings for Public Bot(checked) and Require OAuth2 Code Grant(unchecked). However, make both _**unchecked**_ to keep your bot private.<br><br>![newApplication1](../graphics/registration3.png)<br><br>
 
 4. Congratulations! Your bot has been created. Now, click the _**Copy**_ to copy the token. 
 <br><br>![newApplication1](../graphics/registration4.png)
