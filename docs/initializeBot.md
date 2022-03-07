@@ -27,11 +27,11 @@ Now that we've added the bot to our server, we can start building the brains and
    * `app.js`
    * `token.json`<br><br>
 
-2. Open a terminal ([Terminal in Windows](https://www.wikihow.com/Open-Terminal-in-Windows) or [Terminal in MacOS](https://support.apple.com/en-ca/guide/terminal/apd5265185d-f365-44cb-8b09-71a064a42125/mac)) and type `cd <folder path>` to move into your project folder ([How to get folder path in Windows](https://techdows.com/2022/01/windows-11-copy-as-path-and-its-shortcut.html) or [How to get folder path in MacOS](https://www.igeeksblog.com/how-to-copy-file-folder-path-from-mac-finder/#:~:text=Triple%2Dclick%20the%20file%20path,V%20wherever%20it%20is%20required.)). ***Do not*** close this terminal, unless you are confident you can easily set it up again. You will need this instance of the terminal to complete building your bot.<br><br>
+2. Open a terminal ([Terminal in Windows](https://www.wikihow.com/Open-Terminal-in-Windows), [Terminal in MacOS](https://support.apple.com/en-ca/guide/terminal/apd5265185d-f365-44cb-8b09-71a064a42125/mac), or press **Ctrl+~** if you are using Visual Studio Code) and type `cd <folder path>` to move into your project folder ([How to get folder path in Windows](https://techdows.com/2022/01/windows-11-copy-as-path-and-its-shortcut.html) or [How to get folder path in MacOS](https://www.igeeksblog.com/how-to-copy-file-folder-path-from-mac-finder/#:~:text=Triple%2Dclick%20the%20file%20path,V%20wherever%20it%20is%20required.)). ***Do not*** close this terminal, unless you are confident you can easily set it up again. You will need this instance of the terminal to complete building your bot.<br><br>
 
-3. Enter `npm init` in the terminal. This allows you to easily keep track of files and different libraries you will need to use for this project. You will then be prompted by this menu:<br><br>![npminit](../graphics/npminit.png)<br><br>
+3. Enter `npm init` in the terminal. You will then be prompted by this menu:<br><br>![npminit](../graphics/npminit.png)<br><br>
 
-4. Hit **Enter** until you see the prompt for _`test command`_, or 4 times. For this field, write `nodemon app.js`. It will setup `nodemon`, a useful tool for any web application.
+4. Hit **Enter** until you see the prompt for _`test command`_, or 4 times. For this field, write `nodemon app.js`.
 
 You will see two new files inside your folder:
 
@@ -109,7 +109,7 @@ By itself, JavaScript does not have the capability to create a bot that is integ
 
 ## Adding Basic Commands and Functions
 
-Because this guide is only for a very simple and small-scale bot, we are able to put all the commands inside the `app.js` file. But as bots grow over time, the feasability of this will greatly decrease. As we add more and more functionality, we will fall victim to a trap known as ["if-else hell"](https://www.freecodecamp.org/news/so-youre-in-if-else-hell-here-s-how-to-get-out-of-it-fc6407fec0e/).
+Because this guide is only for a very simple and small-scale bot, we are able to put all the commands inside the `app.js` file. But as projects grow over time, this can be considered a bad practice. If you plan to add more functionality outside this user guide, you can fall victim to a trap known as ["if-else hell"](https://www.freecodecamp.org/news/so-youre-in-if-else-hell-here-s-how-to-get-out-of-it-fc6407fec0e/).
 
 To avoid this, we will use [modular architecture](https://codesource.io/how-to-modularize-javascript-code/) to store different commands in different files. Our project directory should end up looking something similar to this:
 
@@ -198,6 +198,7 @@ Now let's add two different commands to our bot. The first command will be a sim
 | When you create a slash command using the `SlashCommandBuilder` library, you will have to set a name for the command using the `.setName()` method. All command names must be all lowercase letters, they cannot contain numbers or uppercase letters, or else they will not work. |
 
 #### hello.js
+<br>
 
 Create a new file inside your `/commands` folder named `hello.js`. Inside this file, write:
 
@@ -215,9 +216,10 @@ module.exports = {
 ```
 
 This command will activate whenever you type `/hi` in your server, and the bot will reply back to you with _`Hi <Your username>`_.
-<br>
+<br><br>
 
 #### randomNumber.js
+<br>
 
 Create another file inside your `/commands` folder named `randomNumber.js`. Inside this file, write:
 
@@ -242,4 +244,4 @@ This command will activate whenever you type `/randomnumber` in your server, and
 ## Conclusion
 {: .no_toc }
 
-Congratulations! You've now added some functions to your bot! If you want to add more commands, just follow the same steps above, and change the `.setName`, `.setDescription`, and `.reply` fields to whatever parameters you want!
+Congratulations! You've now added some functions to your bot! If you want to add more commands, just follow the same steps above, and change the `.setName`, `.setDescription`, and `.reply` fields to the parameters you want! Otherwise, we can power on the bot and interact with it!

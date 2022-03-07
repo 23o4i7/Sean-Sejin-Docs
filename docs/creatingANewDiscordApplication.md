@@ -16,6 +16,7 @@ nav_order: 3
 ---
 
 ## Creating a new Discord application
+
 In this step, we will walk through how to create a new Discord application using Discord's Developer Portal. This lets you create applications that are directly integrated with Discord's API.
 
 1. Go to [***Applications*** inside the Developer Portal](https://discord.com/developers/applications), and click ***New Application***<br><br>![newApplication2](../graphics/createapplication.png)<br><br>
@@ -25,7 +26,8 @@ In this step, we will walk through how to create a new Discord application using
 ---
 
 ## Register the new application as a bot
-This part will show you how to register your new application as a bot.
+
+Now that you've created an application, we have to register a bot inside it to use.
 
 | ![important](../graphics/important2.png) |
 |---|
@@ -35,7 +37,7 @@ This part will show you how to register your new application as a bot.
 
 2. Confirm creating the bot by clicking, ***Yes, do it!***<br><br>![newApplication1](../graphics/registration2.png)<br><br>
 
-3. After this step, you will see the default settings for Public Bot (checked) and Require OAuth2 Code Grant (unchecked). Make both _**unchecked**_ to keep your bot private for now, then save your settings.<br><br>![newApplication1](../graphics/registration3.png)<br><br>
+3. After this step, you will see the default settings for Public Bot (checked) and Require OAuth2 Code Grant (unchecked). Make both _**unchecked**_ to keep your bot private for now, then click ***Save Changes***.<br><br>![newApplication1](../graphics/registration3.png)<br><br>
 
 4. Click _**Copy**_ to get your bot's token. Save this token somewhere, you will need this token when you start writing code for the bot later.
 <br><br>![newApplication1](../graphics/registration4.png)<br>

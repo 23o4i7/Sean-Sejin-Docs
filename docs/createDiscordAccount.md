@@ -56,7 +56,7 @@ Now you should be on your server's main page, which looks like the first image b
 
 2. On the left side menu, scroll down until you see the ***Advanced*** tab. Selecing it should show the Advanced setting ***Developer Mode***.<br><br>![developerMode](../graphics/developerMode.png)<br>
 
-3. Click the ***x*** to enable Developer Mode. A second option will appear, ***Application Test Mode***. You can ignore this setting for now, it is reserved for Discord applications that require payment processes. <br><br>![devEnabled](../graphics/devModeEnabled.png)<br>
+3. Click the ***x*** to enable Developer Mode. Ignore the second option, ***Application Test Mode***.<br><br>![devEnabled](../graphics/devModeEnabled.png)<br>
 
 ---
 

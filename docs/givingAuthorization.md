@@ -10,13 +10,14 @@ nav_order: 4
 ---
 
 ## Authorizing Bot Permissions
-In this task, inviting your bot to a server is the main part. Create an invite URL for your bot to join a server.
 
-1. In the application page, click the ***Bot*** tab.<br><br>![newApplication1](../graphics/createapplication2.png)<br>
+In this section, we will give the bot its necessary permissions, then we will create an invite link to add the bot to our server.
 
-2. Go to the _**OAuth2**_ tab, and click the _**URL Generator**_. In the table as you see below, click  ***bot*** and ***applications.commands*** under the _**Scopes**_ section.<br><br>![newApplication1](../graphics/authBot.png)<br>
+1. In the ***Bot** tab, go to _**OAuth2**_ and click _**URL Generator**_.<br><br>![newApplication1](../graphics/createapplication2.png)<br>
 
-3. Under the ***Bot Permissions*** section, choose the permissions you want for the bot. The bot can have as many as permissions, but it depends on your needs. For this application, we can just use the ***Admininstrator*** setting.<br><br>![newApplication1](../graphics/authBot2.png)<br>
+2. In the ***scopes*** table, click  ***bot*** and ***applications.commands*** under the _**Scopes**_ section.<br><br>![newApplication1](../graphics/authBot.png)<br>
+
+3. Under the ***Bot Permissions*** table, choose the ***Admininstrator*** setting. Keep in mind you can restrict and remove permissions later.<br><br>![newApplication1](../graphics/authBot2.png)<br>
 
 4. After choosing the necessary permissions for the bot, click the _**copy**_ to get a generated URL that can be used to invite the bot to a server.<br><br>![newApplication1](../graphics/authorization4.png)<br>
 
@@ -29,4 +30,4 @@ In this task, inviting your bot to a server is the main part. Create an invite U
 ## Conclusion
 {: .no_toc }
 
-Congratulations! Now that we've joined the bot to our server, we can start writing the code for the bot.
+Congratulations! Now that we've added the bot to our server, we can start writing the code for the bot.
