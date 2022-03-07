@@ -16,6 +16,7 @@
 
 
 ## Technology used
+- Discord
 - Node.js V16.9.0+ (Download)
 - Visual Studio Code (Recommended), WebStorm, Atom, Eclipse, Notepad++ (Not recommended)
 - Google Chrome, Firefox 38+, Opera, Microsoft Edge 17+, Safari 11+, or Chromium 79+
